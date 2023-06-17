@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Smart Home Config</title>
+</head>
+<body>
+    <div class="titre">
+        <h1>Smart Home ESP Configue</h1>
+    </div>
+
+    <div class="element">
+    <div class="element1">
+        <form>
+            <input type="checkbox" id="checkbox1" checked>
+            <label >Activate</label><br><br>
+            <label >name Label "ON":</label>
+            <input type="text" id="nameLabelOn1" value="ALUMER"><br>
+            <label >name Label "OFF":</label>
+            <input type="text" id="nameLabelOff1" value="ETEINT"><br>
+            <label >name Button:</label>
+            <input type="text" id="nameButton1" ><br>
+          </form>
+    </div>
+
+    <div class="element1">
+        <form>
+            <input type="checkbox" id="checkbox2" checked>
+            <label>Activate</label><br><br>
+            <label id="ETATBUT">name Label "ON":</label>
+            <input type="text" id="nameLabelOn2" name="fname" value="ALUMER"><br>
+            <label>name Label "OFF":</label>
+            <input type="text" id="nameLabelOff2" name="fname" value="ETEINT"><br>
+            <label>name Button:</label>
+            <input type="text" id="nameButton2" name="fname" value="Button 2"><br>
+          </form>
+    </div>
+    
+
+</div>
+
+<div class="element">
+    <button onclick="save()" class="save" >Save</button>
+    <button onclick="Button3()" class="cancel" >Cancel</button>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

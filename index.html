@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Smart Home ESP</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="titre">
+        <h1>Smart Home ESP</h1>
+    </div>
+
+    <div class="divImage">
+        <button onclick="Button2()" class="buttonImage" ><a href="config.html">
+           
+            <img class="" src="/image/setting.png"width="30px", height="30px">
+        </a></button>
+        
+    </div>
+
+    <div class="element">
+        <div class="element1" id="divButton1">
+            <h3 class="etatButtonTexte" id="ETATBUT" >ETAT : <span id="ETATBUTTON1" >ETEINT</span></h3>
+        
+            
+            <fieldset>
+                    <legend>Select drone:</legend>
+                
+                <input type="radio" id="huey" name="radioButton1" value="huey" checked>
+                <label for="huey">Huey</label>
+               
+                <input type="radio" id="dewey" name="radioButton1" value="dewey">
+                <label for="dewey">Dewey</label>
+               
+                <input type="radio" id="louie" name="radioButton1" value="louie">
+                <label for="louie">Louie</label>
+                
+              
+            </fieldset>
+            <input type="number" id="tentacles" name="tentacles"
+            min="1" max="30" value="10">
+
+            <button onclick="" class="" id="buttonName1">BUTTON 1</button> 
+        </div>
+
+
+    
+        <div class="element1" id="divButton2">
+            <h3 class="etatButtonTexte">ETAT : <span id="ETATBUTTON2">ETEINT</span></h3>
+        
+            
+                <fieldset>
+                    <legend>Select drone:</legend>
+                
+                <input type="radio" id="huey" name="radioButton1" value="huey" checked>
+                <label for="huey">Huey</label>
+               
+                <input type="radio" id="dewey" name="radioButton1" value="dewey">
+                <label for="dewey">Dewey</label>
+               
+                <input type="radio" id="louie" name="radioButton1" value="louie">
+                <label for="louie">Louie</label>
+                
+                </fieldset>
+                <input type="number" id="tentacles" name="tentacles"
+                min="1" max="30" value="10">
+
+            <button onclick="Button3()" class="" id="buttonName2" >BUTTON 2</button>
+        </div>
+    </div>
+
+
+    <div class="foot">
+        <i><a href="https://appaznaydroid.com">AppAznayDroid 2022</a></i>
+    </div>
+
+    <script>initial()</script>
+
+</body>
+
+</html>

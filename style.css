@@ -1,0 +1,91 @@
+
+.titre {
+    background-color: cornflowerblue;
+    padding: 1px;
+    color: aliceblue;
+}
+
+body {
+    text-align: center;
+    padding: 5px;
+}
+
+div {
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.568);
+}
+
+.element {
+    align-items: center;
+    display: flex;
+    box-shadow: none;
+    display: flex;
+}
+
+.element1 {
+    flex-grow: 1;
+    margin: 10px;
+}
+
+
+
+button {
+    width: 90%;
+    height: 50px;
+    background-color: rgb(255, 65, 32);
+    /*     background-color: rgb(8, 255, 8); */
+    border: none;
+    border-radius: 10px;
+    color: azure;
+    font-size: x-large;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.etatButtonTexte {
+    margin-bottom: 30px;
+}
+
+.foot {
+    box-shadow: none;
+}
+
+.divImage {
+    display: flex;
+    justify-content: end;
+    box-shadow: none;
+}
+
+.buttonImage {
+    background-color: rgba(238, 130, 238, 0);
+    border-width: 0px;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+}
+
+
+input {
+    margin: 7px;
+}
+.save {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(8, 255, 8);
+}
+
+.cancel {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 65, 32);
+}
+
+a {
+    width: 40%;
+    margin-inline: 10px;
+}
+
+
