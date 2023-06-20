@@ -50,9 +50,39 @@ setInterval(function getData()
 ///////////////////////////////////////////////////////////////////////////////////////
 
 
+const numberInput1 = document.getElementById("numberInput1");
+let numberInput2 = document.getElementById("numberInput2");
+let minuteButton1 = numberInput1.value;
+let minuteButton2 = numberInput2.value;
+
+const buttonName1 = document.getElementById("buttonName1");
+const buttonName2 = document.getElementById("buttonName2");
+
+function Inc(txt) {
+    if (txt == 'Button1') {
+        minuteButton1++;
+    numberInput1.value = minuteButton1;
+    } else {
+        minuteButton2++
+        numberInput2.value = minuteButton2;
+    }
+    numberInput1.textContent = '22';
+    console.log('inc');
+}
+function Dec(txt) {
+    if (txt == 'Button1') {
+        minuteButton1--
+        numberInput1.value = minuteButton1;
+    } else {
+        minuteButton2--
+        numberInput2.value = minuteButton2;
+    }
+    console.log('dec');
+}
+
  function save() {
     
-   
+   /*
     const nameLabelOn1 = document.getElementById("nameLabelOn1");
     const nameLabelOff1 = document.getElementById("nameLabelOff1");
     const nameButton1 = document.getElementById("nameButton1");
@@ -65,7 +95,7 @@ setInterval(function getData()
     const buttonName2 = document.getElementById("buttonName2");
     buttonName2.textContent = nameButton2.textContent;
 
-
+*/
     window.history.back();
 
 }
@@ -73,19 +103,10 @@ setInterval(function getData()
 
 
 function Button3() {
-
-   
     window.history.back();
-
 }
 
-
-
-
-
 nameButton1.textContent = "bonjour";
-
-
 
 checkbox1.addEventListener('change', () => {
     

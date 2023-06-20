@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Smart Home ESP</title>
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -26,23 +25,16 @@
         <div class="element1" id="divButton1">
             <h3 class="etatButtonTexte" id="ETATBUT" >ETAT : <span id="ETATBUTTON1" >ETEINT</span></h3>
         
-            
-            <fieldset>
-                    <legend>Select drone:</legend>
-                
-                <input type="radio" id="huey" name="radioButton1" value="huey" checked>
-                <label for="huey">Huey</label>
-               
-                <input type="radio" id="dewey" name="radioButton1" value="dewey">
-                <label for="dewey">Dewey</label>
-               
-                <input type="radio" id="louie" name="radioButton1" value="louie">
-                <label for="louie">Louie</label>
-                
-              
-            </fieldset><br>
-            <input type="number" id="tentacles" name="tentacles"
-            min="1" max="30" value="10"><br><br>
+            <label for="ModeButton1">Choose a pet:</label>
+            <select name="ModeButton1" id="modeButton1">
+                <option value="dog">At Click</option>
+                <option value="cat">Chrono</option>
+                <option value="hamster">At Click</option>
+            </select><br><br>
+
+            <input type="button" onclick="Dec('Button1')" value="-" class="inputButton">
+            <input type="number" id="numberInput1" min="1" max="30" value="10">
+            <input type="button" onclick="Inc('Button1')" value="+" class="inputButton"> <br><br>
 
             <button onclick="" class="" id="buttonName1">BUTTON 1</button> 
         </div>
@@ -52,22 +44,16 @@
         <div class="element1" id="divButton2">
             <h3 class="etatButtonTexte">ETAT : <span id="ETATBUTTON2">ETEINT</span></h3>
         
-            
-                <fieldset>
-                    <legend>Select drone:</legend>
-                
-                <input type="radio" id="huey" name="radioButton1" value="huey" checked>
-                <label for="huey">Huey</label>
-               
-                <input type="radio" id="dewey" name="radioButton1" value="dewey">
-                <label for="dewey">Dewey</label>
-               
-                <input type="radio" id="louie" name="radioButton1" value="louie">
-                <label for="louie">Louie</label>
-                
-                </fieldset><br>
-                <input type="number" id="tentacles" name="tentacles"
-                min="1" max="30" value="10"><br><br>
+            <label for="ModeButton2">Choose a pet:</label>
+            <select name="ModeButton2" id="modeButton2">
+                <option value="dog">At Click</option>
+                <option value="cat">Chrono</option>
+                <option value="hamster">At Click</option>
+            </select><br><br>
+
+                <input type="button" onclick="Dec('Button2')" value="-" class="inputButton">
+            <input type="number" id="numberInput2" min="1" max="30" value="10">
+            <input type="button" onclick="Inc(' ')" value="+" class="inputButton"> <br><br>
 
             <button onclick="Button3()" class="" id="buttonName2" >BUTTON 2</button>
         </div>
@@ -78,7 +64,7 @@
         <i><a href="https://appaznaydroid.com">AppAznayDroid 2022</a></i>
     </div>
 
-    <script>initial()</script>
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 

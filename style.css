@@ -23,7 +23,20 @@ body {
 
 input {
 max-width: 150px;
+height: 25px;
+margin: 3px;
 }
+
+.inputButton {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(216, 213, 213);
+    border-radius: 5px;
+    border-width: 0px;
+    box-shadow:  -1px -1px 8px #494949, 1px 1px 8px #494949;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
 
 .element1 {
     background-color: rgb(241, 241, 241);
