@@ -26,15 +26,14 @@
             <h3 class="etatButtonTexte" id="ETATBUT" >ETAT : <span id="ETATBUTTON1" >ETEINT</span></h3>
         
             <label for="ModeButton1">Choose a pet:</label>
-            <select name="ModeButton1" id="modeButton1">
-                <option value="dog">At Click</option>
+            <select name="ModeButton1" id="selectButton1">
+                <option value="Click">Click</option>
                 <option value="cat">Chrono</option>
-                <option value="hamster">At Click</option>
             </select><br><br>
 
-            <input type="button" onclick="Dec('Button1')" value="-" class="inputButton">
-            <input type="number" id="numberInput1" min="1" max="30" value="10">
-            <input type="button" onclick="Inc('Button1')" value="+" class="inputButton"> <br><br>
+            <input type="button" id="incButton1" onclick="Dec('Button1')" value="-" class="inputButton" disabled>
+            <input type="number" id="numberInput1" min="1" max="30" value="10" disabled>
+            <input type="button" id="decButton1" onclick="Inc('Button1')" value="+" class="inputButton" disabled> <br><br>
 
             <button onclick="" class="" id="buttonName1">BUTTON 1</button> 
         </div>
@@ -45,20 +44,18 @@
             <h3 class="etatButtonTexte">ETAT : <span id="ETATBUTTON2">ETEINT</span></h3>
         
             <label for="ModeButton2">Choose a pet:</label>
-            <select name="ModeButton2" id="modeButton2">
-                <option value="dog">At Click</option>
-                <option value="cat">Chrono</option>
-                <option value="hamster">At Click</option>
+            <select name="ModeButton2" id="selectButton2">
+                <option value="Click">Click</option>
+                <option value="Chrono">Chrono</option>
             </select><br><br>
-
-                <input type="button" onclick="Dec('Button2')" value="-" class="inputButton">
-            <input type="number" id="numberInput2" min="1" max="30" value="10">
-            <input type="button" onclick="Inc(' ')" value="+" class="inputButton"> <br><br>
+     
+            <input type="button" id="incButton2" onclick="Dec('Button2')" value="-" class="inputButton" disabled="true">
+            <input type="number" id="numberInput2" min="1" max="30" value="10" disabled >
+            <input type="button" id="decButton2" onclick="Inc('Button2')" value="+" class="inputButton" disabled> <br><br>
 
             <button onclick="Button3()" class="" id="buttonName2" >BUTTON 2</button>
         </div>
     </div>
-
 
     <div class="foot">
         <i><a href="https://appaznaydroid.com">AppAznayDroid 2022</a></i>

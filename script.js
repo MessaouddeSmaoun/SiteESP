@@ -51,9 +51,17 @@ setInterval(function getData()
 
 
 const numberInput1 = document.getElementById("numberInput1");
-let numberInput2 = document.getElementById("numberInput2");
+const numberInput2 = document.getElementById("numberInput2");
+const incButton2 = document.getElementById("incButton2");
+const incButton1 = document.getElementById("incButton1");
+const decButton2 = document.getElementById("decButton2");
+const decButton1 = document.getElementById("decButton1");
 let minuteButton1 = numberInput1.value;
 let minuteButton2 = numberInput2.value;
+
+
+const selectButton1 = document.getElementById("selectButton1");
+const selectButton2 = document.getElementById("selectButton2");
 
 const buttonName1 = document.getElementById("buttonName1");
 const buttonName2 = document.getElementById("buttonName2");
@@ -61,13 +69,11 @@ const buttonName2 = document.getElementById("buttonName2");
 function Inc(txt) {
     if (txt == 'Button1') {
         minuteButton1++;
-    numberInput1.value = minuteButton1;
+        numberInput1.value = minuteButton1;
     } else {
         minuteButton2++
         numberInput2.value = minuteButton2;
     }
-    numberInput1.textContent = '22';
-    console.log('inc');
 }
 function Dec(txt) {
     if (txt == 'Button1') {
@@ -77,8 +83,37 @@ function Dec(txt) {
         minuteButton2--
         numberInput2.value = minuteButton2;
     }
-    console.log('dec');
 }
+
+selectButton1.addEventListener('change', function () {
+    if (selectButton1.selectedIndex != 1) {
+        numberInput1.disabled = true;
+        incButton1.disabled = true;
+        decButton1.disabled = true;
+    } else {
+        numberInput1.disabled = false;
+        incButton1.disabled = false;
+        decButton1.disabled = false;
+    }
+})
+
+selectButton2.addEventListener('change', function () {
+    if (selectButton2.selectedIndex != 1) {
+        numberInput2.disabled = true;
+        incButton2.disabled = true;
+        decButton2.disabled = true;
+    } else {
+        numberInput2.disabled = false;
+        incButton2.disabled = false;
+        decButton2.disabled = false;
+    }
+})
+
+function onSelect(){
+    alert(selectButton1.selectedIndex);
+}
+
+
 
  function save() {
     
